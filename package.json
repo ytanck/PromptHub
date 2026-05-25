@@ -1,0 +1,14 @@
+{
+  "name": "prompt-hub",
+  "version": "1.0.0",
+  "description": "A community-driven collection of AI prompts, built with VitePress",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.0"
+  }
+}

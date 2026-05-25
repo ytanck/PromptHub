@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(Get-ChildItem -Recurse -Name -File)",
+      "Bash(Select-String -NotMatch \"node_modules|\\\\.vitepress/dist|\\\\.vitepress/cache\")",
+      "Bash(npx vitepress *)",
+      "Bash(curl -s http://localhost:5173/prompt-hub/)",
+      "Bash(kill %1)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/prompt-hub/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/prompt-hub/prompts/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/prompt-hub/prompts/coding/code-reviewer)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/prompt-hub/contributing)",
+      "Bash(Get-ChildItem -Recurse docs\\\\.vitepress\\\\dist)",
+      "Bash(Select-Object Mode, FullName)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5180/prompt-hub/prompts/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5180/prompt-hub/prompts/coding/code-reviewer)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5180/prompt-hub/prompts/writing/blog-post-generator)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5180/prompt-hub/contributing)",
+      "Bash(curl -s http://localhost:5180/prompt-hub/)",
+      "Bash(curl -s http://localhost:5181/prompt-hub/)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\" http://localhost:5181/prompt-hub/prompts/coding/code-reviewer)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\" http://localhost:5181/prompt-hub/prompts/analysis/data-analyzer)",
+      "Bash(curl -s http://localhost:5182/prompt-hub/prompts/coding/ccc.html)",
+      "Bash(curl -s http://localhost:5182/prompt-hub/prompts/coding/code-reviewer.html)",
+      "Bash(curl -s http://localhost:5182/prompt-hub/contributing.html)",
+      "Bash(curl -s http://localhost:5182/prompt-hub/prompts/index.html)",
+      "Bash(curl -s http://localhost:5183/prompt-hub/prompts/coding/ccc.html)",
+      "Bash(curl -s http://localhost:5183/prompt-hub/prompts/coding/code-reviewer.html)",
+      "WebSearch",
+      "Bash(rm -rf /tmp/vp-test2)",
+      "Bash(mkdir -p /tmp/vp-test2/docs/.vitepress/theme)",
+      "PowerShell(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\" http://localhost:5178/prompt-hub/prompts/coding/dd)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\" http://localhost:5178/prompt-hub/prompts/coding/dd.html)",
+      "Bash(curl -s http://localhost:5178/prompt-hub/prompts/coding/dd)"
+    ]
+  }
+}
