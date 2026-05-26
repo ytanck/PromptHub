@@ -1,5 +1,13 @@
 import { createContentLoader } from 'vitepress'
 
+function formatDate(raw: unknown): string {
+  if (!raw) return ''
+  if (typeof raw === 'string') return raw.slice(0, 10)
+  // YAML parses date: 2026-05-21 as a Date object
+  if (raw instanceof Date) return raw.toISOString().slice(0, 10)
+  return String(raw).slice(0, 10)
+}
+
 interface PromptData {
   title: string
   url: string
@@ -24,7 +32,7 @@ export default createContentLoader('prompts/**/*.md', {
       .map(p => ({
         title: p.frontmatter.title,
         url: p.url,
-        date: p.frontmatter.date || '',
+        date: formatDate(p.frontmatter.date),
         tags: p.frontmatter.tags || [],
         author: p.frontmatter.author || 'Anonymous',
         model: p.frontmatter.model || 'General',

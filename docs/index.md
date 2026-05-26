@@ -58,7 +58,8 @@ const members = [
 
 ## Recently Added
 
-<div v-for="p of data" :key="p.url" class="prompt-card">
+<div class="prompt-grid">
+  <div v-for="p of data" :key="p.url" class="prompt-card">
   <h3><a :href="withBase(p.url)">{{ p.title }}</a></h3>
   <div class="meta">
     {{ p.date }} · by {{ p.author }} · {{ p.model }}
@@ -67,6 +68,7 @@ const members = [
   <div class="tags">
     <span v-for="t in p.tags" :key="t" class="tag">{{ t }}</span>
   </div>
+</div>
 </div>
 
 <div v-if="data.length === 0" style="text-align: center; color: var(--vp-c-text-2); padding: 2rem;">

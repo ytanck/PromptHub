@@ -29,12 +29,19 @@
   border-color: var(--vp-c-brand-1);
 }
 
-/* Prompt cards on home page */
+/* Prompt card grid on home page */
+.prompt-grid {
+  --cards-per-row: 3;
+  display: grid;
+  grid-template-columns: repeat(var(--cards-per-row), 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
 .prompt-card {
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   padding: 1.25rem 1.5rem;
-  margin-bottom: 1rem;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
@@ -152,14 +159,24 @@
   background: var(--vp-c-bg-soft);
 }
 .dark .VPContent {
-  background-color: rgb(10, 10, 11);
+  background-color: rgb(10, 10, 10);
   background-image: url("/grid.svg");
 }
 
 /* Responsive */
+@media (max-width: 960px) {
+  .prompt-grid {
+    --cards-per-row: 2;
+  }
+}
+
 @media (max-width: 640px) {
   .category-grid {
     grid-template-columns: 1fr;
+  }
+
+  .prompt-grid {
+    --cards-per-row: 1;
   }
 
   .prompt-meta {
