@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Browse Prompts
-      link: /prompts/
+      link: /prompts/guide
     - theme: alt
       text: How to Contribute
       link: /contributing
@@ -37,6 +37,23 @@ features:
 <script setup>
 import { data } from './prompts/recent.data'
 import { withBase } from 'vitepress'
+import {
+  VPTeamPage,
+  VPTeamPageTitle,
+  VPTeamMembers
+} from 'vitepress/theme';
+const members = [
+  {
+    avatar: 'https://www.github.com/ytanck.png',
+    name: 'Yang',
+    title: 'vibe coding',
+    desc: 'Developer<br/>Creator @ <a href="" target="_blank">PromptHub</a>',
+    links: [
+      { icon: 'github', link: 'https://github.com/' },
+      { icon: 'youtube', link: 'https://www.youtube.com'},
+    ]
+  }
+]
 </script>
 
 ## Recently Added
@@ -55,3 +72,15 @@ import { withBase } from 'vitepress'
 <div v-if="data.length === 0" style="text-align: center; color: var(--vp-c-text-2); padding: 2rem;">
   No prompts yet — <a href="/contributing">be the first to contribute!</a>
 </div>
+
+<VPTeamPage>
+  <VPTeamPageTitle>
+    <template #title>
+      Contributors
+    </template>
+  </VPTeamPageTitle>
+  <VPTeamMembers
+    size="small"
+    :members="members"
+  />
+</VPTeamPage>

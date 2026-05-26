@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme'
 import { useData } from 'vitepress'
-import CopyPrompt from './components/CopyPrompt.vue'
+// import CopyPrompt from './components/CopyPrompt.vue'
 
 const { Layout } = DefaultTheme
 const { page } = useData()
@@ -9,8 +9,8 @@ const { page } = useData()
 
 <template>
   <Layout>
-    <template #doc-before>
+    <!-- <template #doc-before>
       <CopyPrompt v-if="page.filePath.startsWith('prompts/')" />
-    </template>
+    </template> -->
   </Layout>
 </template>

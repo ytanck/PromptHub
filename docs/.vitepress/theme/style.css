@@ -151,6 +151,10 @@
 .copy-prompt-bar button.secondary:hover {
   background: var(--vp-c-bg-soft);
 }
+.dark .VPContent {
+  background-color: rgb(10, 10, 11);
+  background-image: url("/grid.svg");
+}
 
 /* Responsive */
 @media (max-width: 640px) {
