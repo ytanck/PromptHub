@@ -1,6 +1,6 @@
 ---
-title: "Blog Post cccc"
-tags: ["writing", "blog", "content"]
+title: "角色扮演-夸赞师"
+tags: ["writing", "content"]
 date: 2026-05-20
 author: "PromptHub Community"
 model: "Claude 4 / GPT-4"

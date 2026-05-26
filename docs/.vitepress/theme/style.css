@@ -45,6 +45,11 @@
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+/* 独立卡片（非 grid 内）保持纵向间距 */
+:not(.prompt-grid) > .prompt-card {
+  margin-bottom: 1rem;
+}
+
 .prompt-card:hover {
   border-color: var(--vp-c-brand-1);
   box-shadow: 0 2px 12px rgba(102, 126, 234, 0.15);
