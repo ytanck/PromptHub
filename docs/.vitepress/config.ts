@@ -1,20 +1,24 @@
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar'
 
+const base = process.env.GITHUB_ACTIONS ? '/prompt-hub/' : '/'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base,
   title: 'PromptHub',
   description: 'A community-driven collection of AI prompts',
   cleanUrls: true,
   ignoreDeadLinks: true,
+  appearance: 'dark',
 
   head: [
-    ['link', { rel: 'icon', href: `/favicon.svg`, type: 'image/svg+xml' }]
+    ['link', { rel: 'icon', href: `${base}favicon.svg`, type: 'image/svg+xml' }]
   ],
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/favicon.svg',
+    logo: `${base}favicon.svg`,
 
     nav: [
       { text: 'Home', link: '/' },
