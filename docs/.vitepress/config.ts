@@ -33,11 +33,11 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/YOUR_USERNAME/prompt-hub' }
+      { icon: 'github', link: 'https://github.com/ytanck/PromptHub' }
     ],
 
     editLink: {
-      pattern: 'https://github.com/YOUR_USERNAME/prompt-hub/edit/main/docs/:path',
+      pattern: 'https://github.com/ytanck/PromptHub/edit/master/docs/:path',
       text: 'Edit this page on GitHub'
     },
 
