@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar'
 
-const base = process.env.GITHUB_ACTIONS ? '/prompt-hub/' : '/'
+const base = process.env.GITHUB_ACTIONS ? '/PromptHub/' : '/'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
