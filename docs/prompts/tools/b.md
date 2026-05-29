@@ -1,5 +1,5 @@
 ---
-title: "文本提取代理b"
+title: "tool-文本提取"
 tags: ["writing", "blog", "content"]
 date: 2026-05-20
 author: "PromptHub Community"
